@@ -1,0 +1,80 @@
+/*global*/
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: arial;
+}
+
+p{
+    line-height: 2;
+}
+
+h3,h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.img-container{
+    max-width: 100%;
+}
+
+
+a{
+    text-decoration:  none; /*remove underline from a link*/
+    padding: 0.5rem;
+}
+
+
+/*Utilities*/
+.container{
+    width: 90%;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*i can switch it to column, just if i want them display like column*/
+    /*flex-direction: column-reverse; just make it display as columns, but switch the order upside down*/
+}
+
+.flex-container-bar{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+     /*the unique difference between .flex-container is that one is order-directioned in rows, and the other one in columns*/
+}
+
+
+section{
+    width: 40%;
+}
+
+/*Header*/
+.site-init{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    height: 350px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.site-init a{
+    color: white;
+}
+
