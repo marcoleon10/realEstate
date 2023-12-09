@@ -30,41 +30,36 @@ a{
     
 }
 
+.vinc{
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+.vinc a{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+}
+
 .houses{
     display: flex;
     flex-direction: row;
-    
-    margin-right: auto;
-    margin-left: auto;
-    
 }
 
 .house-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding: 15px;
-    margin-left: 10px;
+    background-color: #dedede;
     margin-right: 10px;
-    background-color: beige;
-    
-    
 }
 
-.house-container img{
+.house-container-img{
     max-width: 100%;
-    max-height: 100%;
-    
-    object-fit: cover;
 }
 
 .house-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    
+    padding: 15px;
 }
 
 .house-info{
@@ -73,29 +68,22 @@ a{
 
 .house-include{
     display: flex;
-    flex-direction: row;
-   margin-bottom: 15px;
-   
-    
 }
 
 .house-include-item{
     display: flex;
-    flex-direction: row;
-    
-    margin-right: auto;
     margin-left: auto;
-    justify-content: space-around;
-    margin-top: 40px;
-
+    margin-right: auto;
+    padding: 15px;
 }
 
 .house-include-item img{
-    margin-right: 15px;
-    max-width: 100%;
+    margin-right: 10px;
 }
 
-.house-container a{
+
+
+.btn-details{
     text-decoration: none;
     color: white;
     background-color: orange;
@@ -103,11 +91,6 @@ a{
     margin-top: auto;
     margin-bottom: auto;
 }
-
-.house-info h5{
-    color: green;
-}
-
 
 
 .title{
@@ -136,6 +119,8 @@ a{
     height: 100px;
     align-items: center;
 }
+
+
 
 
 .site-secondary{
@@ -213,7 +198,6 @@ legend{
 }
 
 .send{
-    
     margin-top: 20px;
     margin-bottom: 20px;
     display: block;
@@ -223,8 +207,9 @@ legend{
     border-radius: 5px;
     border: none;
     cursor: pointer;
-
 }
+
+
 
 /*Footer*/
 footer{
@@ -259,15 +244,138 @@ footer{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
-    
+    justify-content: space-around; 
 }
 
 .footer-vinc a{
     text-decoration: none;
     color: white;
     background-color: orange;
+}
+
+.footer-subtitle{
+    font-size: 30px;
+}
+
+.footer-subtitle-info{
+    font-size: 15px;
+
+}
+
+/*ABOUT US*/
+
+.about-us-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.we-are{
+    font-size: 35px;
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.about-us-info{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.about-us-img{
+  border-radius: 5%;  
+}
+
+@media (max-width: 768px){
+    
+    .container{
+        width: 90%;
+        
+    }
+    
+    .bar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .site-init{
+        height: 25vh;
+    }
+
+    .more-about-container{
+        flex-direction: column;   
+    }
+
+    .houses{
+        flex-direction: column;
+    }
+
+    .house-container{
+        margin-bottom: 10px;
+    }
+
+    .footer-subtitle-info{
+        display: none;
+    }
+
+    .footer-vinc {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .footer-vinc a{
+        background-color: rgb(194, 66, 66);
+    }
+
+    .footer-subtitle{
+        text-align: center;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .about-us-container{
+        flex-direction: column;
+    }
+
+    .about-us-info{
+        width: 95%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+    }
+
+}
+
+/*PRACTICE HTML*/
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    padding: 5px;
+    text-align: center;
+    
+    margin-top: 10px;
+}
+
+.error{
+    
+    
+}
+
+tbody tr{
+    background-color: rgb(241,182,182);
+    color: rgb(99,6,6);
     
     
 }
